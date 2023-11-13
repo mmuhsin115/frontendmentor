@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+.up {
+  height: 200px;
+  width: 100%;
+  clear: both;
+}
+.col {
+  margin: auto;
+  max-width: 740px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 10px 10px 40px -10px hsla(252, 100%, 67%, 30%);
+  border-radius: 30px;
+}
+
+.col1 {
+  padding: 30px 0px;
+  max-width: 370px;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 30px;
+  text-align: center;
+}
+
+.title {
+  /* padding: 40px 0; */
+  margin: 10px 0;
+  color: white;
+  font-size: 20px;
+}
+
+.cir {
+  position: relative;
+  margin: 30px auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.point {
+  font-size: 50px;
+  padding-top: 60px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 800;
+}
+.totalpoint {
+  font-size: 18px;
+  color: grey;
+}
+
+.remark {
+  margin: 10px auto;
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+  /* padding: 30px; */
+}
+.details {
+  margin: 20px 60px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  color: grey;
+  /* padding: 60px 60px; */
+}
+
+.col2 {
+  padding: 10px 40px;
+  max-width: 370px;
+  border-radius: 30px;
+  text-align: left;
+}
+.summary {
+  font-size: 25px;
+  font-weight: 700;
+  padding: 20px 0;
+}
+.bar {
+  padding: 18px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+div.col2 > div:nth-child(2) {
+  color: hsl(0, 100%, 67%);
+  background-color: hsla(0, 100%, 67%, 10%);
+}
+div.col2 > div:nth-child(3) {
+  color: hsl(39, 100%, 56%);
+  background-color: hsla(39, 100%, 56%, 10%);
+}
+div.col2 > div:nth-child(4) {
+  color: hsl(166, 100%, 37%);
+  background-color: hsla(166, 100%, 37%, 10%);
+}
+div.col2 > div:nth-child(5) {
+  color: hsl(234, 85%, 45%);
+  background-color: hsla(234, 85%, 45%, 10%);
+}
+button {
+  width: 100%;
+  margin: 30px 0;
+  border: none;
+  padding: 20px 0;
+  border-radius: 40px;
+  color: white;
+  background-color: rgb(48, 59, 89);
+  font-size: 18px;
+  font-weight: 700;
+}
+button:active {
+  background-color: rgb(81, 86, 101);
+}
+
+@media all and (max-width: 375px) {
+  .col {
+    grid-template-columns: 1fr;
+  }
+}
